@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% load static %}
+<!-- prettier-ignore -->
+{% block title %}This Post Title{% endblock %}
+{% block css_files %}
+<!-- prettier-ignore -->
+<link rel="stylesheet" href=""/>
+<!-- prettier-ignore -->
+<link rel="stylesheet" href="{% static 'blog/post-detail.css' %}" />
+{% endblock %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<section id="summary">
+  <h2>Post Title</h2>
+  <article>
+    <img src="{% static 'blog/images/mountains.jpg' %}" alt="Post Title" />
+    <address>By Hariri A.</address>
+    <div>Last update on: <time>July 10th</time></div>
+  </article>
+</section>
+<main>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sint
+    tempore laborum alias doloremque vitae quasi, praesentium adipisci doloribus
+    nemo ab fugiat asperiores sit quos autem illo totam nulla? Reprehenderit.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quod rerum
+    autem quia. Magnam, voluptates pariatur! Placeat neque atque obcaecati saepe
+    animi praesentium ipsam debitis aperiam voluptates? Voluptate, minima
+    cumque?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem facilis
+    fugit, vitae voluptatem, accusantium enim obcaecati repellendus amet error
+    fugiat facere voluptatibus. Quis vitae illo sint, quaerat excepturi veniam
+    ut?
+  </p>
+</main>
+{% endblock %}
